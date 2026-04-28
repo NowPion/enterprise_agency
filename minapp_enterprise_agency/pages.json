@@ -1,0 +1,157 @@
+{
+	"pages": [
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "欣快服务",
+				"navigationBarBackgroundColor": "#1976d2",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/order/list",
+			"style": {
+				"navigationBarTitleText": "办理进度",
+				"navigationBarBackgroundColor": "#1976d2",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/mine/mine",
+			"style": {
+				"navigationBarTitleText": "我的",
+				"navigationBarBackgroundColor": "#1976d2",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/order/detail",
+			"style": {
+				"navigationBarTitleText": "订单详情",
+				"navigationBarBackgroundColor": "#1976d2",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/order/create",
+			"style": {
+				"navigationBarTitleText": "提交办理",
+				"navigationBarBackgroundColor": "#1976d2",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/product/detail",
+			"style": {
+				"navigationBarTitleText": "业务详情",
+				"navigationBarBackgroundColor": "#1976d2",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/login/login",
+			"style": {
+				"navigationBarTitleText": "登录",
+				"navigationBarBackgroundColor": "#ffffff",
+				"navigationBarTextStyle": "black"
+			}
+		},
+		{
+			"path": "pages/mine/profile",
+			"style": {
+				"navigationBarTitleText": "个人资料",
+				"navigationBarBackgroundColor": "#ffffff",
+				"navigationBarTextStyle": "black"
+			}
+		},
+		{
+			"path": "pages/mine/agreement",
+			"style": {
+				"navigationBarTitleText": "用户协议",
+				"navigationBarBackgroundColor": "#ffffff",
+				"navigationBarTextStyle": "black"
+			}
+		},
+		{
+			"path": "pages/mine/privacy",
+			"style": {
+				"navigationBarTitleText": "隐私政策",
+				"navigationBarBackgroundColor": "#ffffff",
+				"navigationBarTextStyle": "black"
+			}
+		},
+		{
+			"path": "pages/coupon/list",
+			"style": {
+				"navigationBarTitleText": "优惠券",
+				"navigationBarBackgroundColor": "#1976d2",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/mine/feedback",
+			"style": {
+				"navigationBarTitleText": "反馈问题/建议",
+				"navigationBarBackgroundColor": "#ffffff",
+				"navigationBarTextStyle": "black"
+			}
+		},
+		{
+			"path": "pages/invoice/apply",
+			"style": {
+				"navigationBarTitleText": "申请发票",
+				"navigationBarBackgroundColor": "#1976d2",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/invoice/list",
+			"style": {
+				"navigationBarTitleText": "我的发票",
+				"navigationBarBackgroundColor": "#1976d2",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/invoice/detail",
+			"style": {
+				"navigationBarTitleText": "发票详情",
+				"navigationBarBackgroundColor": "#1976d2",
+				"navigationBarTextStyle": "white"
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "企快办",
+		"navigationBarBackgroundColor": "#ffffff",
+		"backgroundColor": "#f5f5f5"
+	},
+	"tabBar": {
+		"color": "#999999",
+		"selectedColor": "#1976d2",
+		"backgroundColor": "#ffffff",
+		"borderStyle": "black",
+		"list": [
+			{
+				"pagePath": "pages/index/index",
+				"text": "首页",
+				"iconPath": "static/tab/index.png",
+				"selectedIconPath": "static/tab/index-activate.png"
+			},
+			{
+				"pagePath": "pages/order/list",
+				"text": "办理进度",
+				"iconPath": "static/tab/record.png",
+				"selectedIconPath": "static/tab/record-activate.png"
+			},
+			{
+				"pagePath": "pages/mine/mine",
+				"text": "我的",
+				"iconPath": "static/tab/mine.png",
+				"selectedIconPath": "static/tab/mine-activate.png"
+			}
+		]
+	},
+	"uniIdRouter": {}
+}

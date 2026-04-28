@@ -1,0 +1,73 @@
+spring:
+  servlet:
+    multipart:
+      max-file-size: 50MB
+      max-request-size: 50MB
+
+  jpa:
+    generate-ddl: true
+    defer-datasource-initialization: true
+    show-sql: true  # SQL 日志（生产建议关闭）
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate.auto_quote_keyword: true
+
+  application:
+    name: admin3
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    #url: jdbc:mysql://39.97.34.77:3306/enterprise_agency?characterEncoding=utf8&useUnicode=true&serverTimezone=Asia/Shanghai
+    url: jdbc:mysql://127.0.0.1:3306/enterprise_agency?characterEncoding=utf8&useUnicode=true&serverTimezone=Asia/Shanghai
+    username: root
+    password: root
+    #password: Wxs1230.0
+
+  sql:
+    init:
+      encoding: utf8
+      data-locations: classpath:data.sql
+      mode: never
+      continue-on-error: true
+
+  data:
+    web:
+      pageable:
+        one-indexed-parameters: true
+
+  profiles:
+    include: biz
+
+  jackson:
+    default-property-inclusion: non_null
+    time-zone: GMT+8
+    date-format: yyyy-MM-dd HH:mm:ss
+
+server:
+  port: 2357
+  servlet:
+    context-path: /api
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true
+
+# 小程序 JWT 配置
+miniapp:
+  jwt:
+    secret: tongue-diagnosis-miniapp-jwt-secret-key-2025-production
+    expiration: 604800000  # 7 天（毫秒）
+
+# 智谱 AI 配置
+zhipu:
+  api:
+    key: 50bf135fd64c4cc9898ed7189754f666.TtUiOHJWIjYlrwcW
+    base-url: https://open.bigmodel.cn/api/paas/v4
+    model: glm-4v-flash
+    timeout: 120
+
+# 阿里云企业信息查询 API 配置
+#aliyun:
+#  enterprise:
+#    appcode: 6831628d5e1c4b14ac2d5711eab13574
